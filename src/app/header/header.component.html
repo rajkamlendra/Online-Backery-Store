@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark badge-warning font-weight-bolder" >
+  <a class="btn btn-outline-warning"  routerLink=""><img src="assets/logo.jpg"  width=" 150px" height="75px"alt="no image"></a>
+&nbsp;
+&nbsp;
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-left">
+      <li class="nav-item active">
+        <a><button class="btn btn-outline-dark" routerLink=""><b> Home </b></button></a>
+      </li> 
+    </ul>
+  
+  </div>
+
+  
+  <form>
+    <b class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"class="btn btn-outline-dark">
+        <b>Category</b>
+      </a>
+      &nbsp;
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#" *ngFor="let cat of category">{{cat.name}}</a>
+      </div></b>
+      &nbsp;
+      &nbsp;
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="button" routerLink="/login">Login</button>
+    &nbsp;
+    &nbsp;
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="button"routerLink="/register">Sign-up</button>
+    &nbsp;
+    &nbsp;
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="button"routerLink="/mycart">My Cart</button>
+    </form>
